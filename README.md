@@ -9,3 +9,11 @@ def all_equal(iterable):
     g = groupby(iterable)
     return next(g, True) and not next(g, False)
 ```
+
+Chain multiple iterator together and process results
+
+```python
+from itertools import chain
+
+chain('ABC', 'DEF') # --> A B C D E F
+```
